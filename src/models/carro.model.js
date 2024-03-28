@@ -27,9 +27,4 @@ const Carro = db.define("Carro", {
     },
 });
 
-Carro.belongsToMany(Cliente, {
-    through: Aluguel,
-    foreignKey: "idCarro",
-});
-
 module.exports = Carro;
